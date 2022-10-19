@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p{
+    height: 100vh;
+    background-color: #ffebcd;
+    display: grid;
+    place-items: center;
+
+}
+
+.c{
+   width: 50%;
+   height: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.outer{
+
+    width:250px;
+    height:250px;
+    background-color: #da9235;
+    border-radius: 50%; 
+    border: 1.2px solid black;
+    display: grid;
+    place-items: center;
+    box-shadow: -5px  10px 10px rgba(0, 0, 0, 0.327);
+
+}
+
+
+.outer1{
+    position: relative;
+    width:250px;
+    height:250px;
+    background-color: #f97dca;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    top: -4%;
+    left: 2%;
+    border-bottom:0; 
+    border-left: 0 ;
+    transform: rotate(5deg);
+
+}
+
+.outer1::before{
+    content: "";
+    position: relative;
+    width: 242px;
+    height:242px;
+    border-radius: 50%;
+    border: 6px solid #ffc1e7;
+    border-top: 0;
+    border-left: 0;
+    border-bottom:2%;
+    transform: rotate(90deg);
+    
+} 
+
+
+
+
+
+.inner2{
+    position:fixed;
+    width:100px;
+    height:100px;
+    background-color: #ffebcd;
+    border-radius: 50%;
+    border: 1.2px solid #201f1d;
+    box-shadow: inset -2px 6px 0px #da9235; 
+    border-top:0; 
+    border-right: 0 ;
+}
+
+.inner2::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ffffff;
+    right: -25px;
+    bottom:25px;
+    border-bottom-right-radius: 50px;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(-50deg);
+}
+
+.eye{
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: relative;
+    left: 5px;
+    top:-50px;
+    box-shadow: 60px -5px 0 0 black;
+}
+
+
+.eye::before{
+
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    border:2px solid black;
+    transform: rotate(-5deg);
+    top: 20px;
+    left:20px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+.outer:hover .eye::before{
+
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    border: 2px solid black;
+    background-color: rgb(228, 15, 136);
+    transform: rotate(-5deg);
+    top: 18px;
+    left:18px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: all 0.1s linear;
+  
+}
