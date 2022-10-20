@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #db85f8e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #2d1c07;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    flex-direction: column-reverse;
+    /* box-shadow: hori-offset ver-offset blur density color; */
+    box-shadow: 0px 0px 0px 10px #472b0c,
+                0px 0px 0px 25px #04abb7,
+                0px 0px 0px 45px #08d1e3,
+                0px 0px 0px 50px #10cdde,
+                0 120px 0 -30px #2d1c07,
+                100px 70px 0 -35px #2d1c07,
+                70px 135px 0 -20px #2d1c07,
+                10px 210px 0 -55px #2d1c07,
+                30px 250px 0 -65px #2d1c07;
+}
+
+.coffee::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    background-color: #07bac7;
+    border-radius: 15px;
+    top:-90px;
+    left: 140px;
+    transform: rotate(35deg);
+    z-index: -1;
+   
+
+}
+
+.sign{
+    font-size: 40px;
+    color:#f9b76c;
+    font-family: 'Cookie', cursive;
+    font-weight:300px ;
+    transform: rotate(-25deg);
+    margin: 3px;
+   
+}
+
+.sign h4{
+    text-shadow:0 0 9px #eaea31;
+    
+}
+
+
