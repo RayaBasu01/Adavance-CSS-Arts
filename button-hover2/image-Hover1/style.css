@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #ffff83;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html{
+    font-size:62.5%;
+}
+
+
+.center{
+    width: 60%;
+    height: 60vh;
+    background-color: rgba(255, 242, 98, 0.409);
+    border-radius: 2rem;
+    box-shadow: 0px 7px 20px 10px rgba(189, 187, 187, 0.667);
+    position: relative;
+}
+
+
+.clip{
+    position: absolute;
+    width:100%;
+    height: inherit;
+    top:0;
+    left:0;
+    border-radius: 2rem;
+    box-shadow: 0px 7px 20px 10px rgba(243, 232, 110, 0.123);
+    transition: all 0.5s linear;
+
+}
+
+ 
+.image2{
+    background-image: url(https://wp.scoopwhoop.com/wp-content/uploads/2017/11/5a0aaa13fb778528c532682a_50e4de95-1be0-4440-9efa-995d6eee52ee.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(75% 0,100% 0, 100% 100%,60% 100%);
+
+}  
+.image3{
+    background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/dest_img/mmt/activities/m_Maldives_dest_landscape_l_755_1487.jpg);
+    background-position: center;
+    background-size: contain;
+    clip-path: polygon(0 0,25% 0, 40% 100%,0% 100%);
+    z-index: 1;
+
+} 
+.image1{
+    background-image: url(https://idsb.tmgrup.com.tr/ly/uploads/images/2021/03/04/97590.jpg);
+    background-position: center;
+    background-size: contain;
+    clip-path: polygon(25% 0,75% 0, 65% 100%,30% 100%);
+   
+} 
+
+
+
+.center:hover .clip{
+    clip-path: polygon(0 0,100% 0, 100% 0,0 0);
+}
+
+.center .clip:hover{
+    clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+}
