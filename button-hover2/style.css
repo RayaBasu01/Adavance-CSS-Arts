@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #dac930;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html{
+    font-size:62.5%;
+}
+
+a{
+    height: 10rem;
+    width: 20rem;
+    text-decoration: none;
+}
+
+span{
+    padding: 2rem 3rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    position: absolute;
+    transition: all 0.3s linear;
+}
+
+
+span:first-child{
+    background-color: orangered;
+    color: white;
+}
+
+span:last-child{
+    background-color: white;
+    color: orangered;
+    clip-path: polygon(63% 0,100% 0,100% 100%,40% 100%);
+}
+
+span:last-child:hover{
+    clip-path: polygon(0 0, 100% 0,100% 100%,0 100%);
+}
+
+span:first-child:hover ~span{
+    clip-path: polygon(100% 0,100% 0, 100% 100%,100% 100%);
+}
