@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #c53535;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html{
+    font-size:62.5%;
+}
+
+.card{
+    background:linear-gradient(45deg,#000000,#ad0101);
+    box-shadow: 0px 5px 15px 0px rgba(152, 2, 2, 0.582);
+    height: 270px;
+    min-width: 250px;
+    width: 450px;
+    padding: 20px;
+    color: #ffffff;
+   position: relative;
+   border-radius: 20px;
+
+}
+
+.card img{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-35%,-60%);
+    transition: all 0.2s linear;
+    filter: drop-shadow(2px 2px 5px #760a0a7b);
+}
+
+
+.card h3{
+    margin-top: 145px;
+    font-size: 35px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, rgb(249, 0, 0));
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 0.2s linear;
+}
+
+
+
+
+
+.card a{
+    cursor: pointer;
+    font-size: 1px;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-decoration: none;
+    color:transparent;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.card a:hover{
+    background-color: #ffffff;
+    color:#ff0000;
+    border: 1px solid #ff0000;
+}
+
+.card p{
+    color: transparent;
+    width: 200px;
+    font-size: 1px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.card:hover img{
+    height: 380px ;
+    width: 380px;
+    left:70%;
+    top:85%;
+    filter: drop-shadow(5px 8px 5px rgba(39, 34, 34, 0.838));
+}
+
+.card:hover h3{
+    margin-top: 0;
+    font-size: 33px;
+}
+
+.card:hover p{
+    color: white;
+    opacity: 1;
+    font-size: 13px;
+}
+
+.card:hover a{
+    opacity: 1;
+    font-size: 18px;
+    background-color: #c10303;
+    text-decoration: none;
+    color: #eee;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
