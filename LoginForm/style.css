@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #7994ff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html{
+    font-size:62.5%;
+}
+
+
+.main{
+    background-color: #7994ff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    width: 40rem;
+    padding: 5rem;
+    background-color: #090938;
+    border-radius: 10px;
+
+}
+
+.center h1{
+   margin-bottom: 3rem;
+   color: #ffffff;
+   text-align: center;
+   
+}
+
+.center .input-box{
+    position: relative;
+}
+
+.center .input-box input{
+
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem ;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+}
+
+.center .input-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+
+.center .input-box input:focus ~ label,
+.center .input-box input:valid ~ label{
+
+    top: -2rem;
+    color:#7994ff;
+    font-size: 1.4rem;
+}
+
+
+.center .btn{
+    background:transparent;
+    border: none;
+    outline: none;
+    color: #090938;
+    background-color:#7994ff ;
+    padding: 0.8rem 1rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    
+}
