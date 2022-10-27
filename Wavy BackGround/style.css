@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size:62.5%;
+}
+
+
+body{
+    background-color: #f2e8ec;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.main{
+
+    background-color: #9e3afb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main h1{
+
+    font-size: 8rem;
+    color: white;
+
+
+}
