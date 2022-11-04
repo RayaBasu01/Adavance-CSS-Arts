@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500;600&family=Clicker+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Kaushan+Script&family=Mali:wght@300;400&family=Merriweather:ital,wght@1,300&family=Patua+One&family=Play:wght@700&family=Righteous&family=Rubik+Moonrocks&family=Satisfy&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_header{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(https://preview.redd.it/8zmdp06tekl61.jpg?auto=webp&s=0531fc78c45cb975c2533f9288f62cb49196c19d);
+    background-size: 100% 100%;
+}
+h1{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 100px;
+    padding: 0 10px;
+    background: rgb(179, 56, 193);
+    mix-blend-mode: screen;
+}
